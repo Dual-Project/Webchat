@@ -1,10 +1,8 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, send_from_directory
 from flask_socketio import SocketIO
 
-app = Flask(__name__)
+app = Flask(__name__, template_folder='../frontend/dist', static_folder='../frontend/dist/js')
 app.config['SECRET_KEY'] = 'secret!'
-app.template_folder = "../frontend/dist"
-app.static_folder = "../frontend/dist/css"
 socketio = SocketIO(app)
 
 
