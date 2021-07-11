@@ -2,6 +2,7 @@ from flask import Flask, render_template
 from flask_socketio import SocketIO, send
 
 app = Flask(__name__, template_folder='../frontend/dist', static_folder='../frontend/dist/js')
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:////tmp/test.db'
 app.config['SECRET_KEY'] = 'secret!'
 socketio = SocketIO(app)
 
