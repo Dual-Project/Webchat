@@ -22,9 +22,3 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
-
-
-### Criar estrutura no arquivo .vue
-```
-ctrl + space -> enter
-```
