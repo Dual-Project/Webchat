@@ -1,0 +1,40 @@
+:root{
+	--border: 15px;
+	--dark: #242424;
+	--light: #eeffff;
+}
+
+*{
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+
+@media(max-width: 321px){
+	body{
+		background: chartreuse;
+	}
+}
+
+.components li{
+	align-content: center;
+}
+.components li img{
+	padding: 0.5em;
+	border-radius: var(--border);
+	background: var(--light);
+}
+
+.screenchat{
+	padding: 2em;
+	min-width: 80vw;
+	min-height: 50vh;
+	max-width: 90vw;
+	background: var(--dark);
+	border-radius: var(--border);
+}
+.screenchat > h1{
+	font-family: 'Open Sans', 'Helvetica Neue', sans-serif;
+	
+}
