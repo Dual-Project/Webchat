@@ -1,26 +1,14 @@
 <template>
-  <section>
+  <section class="friends">
         <ul>
             <li>
-                <img src="../assets/logo.png">
-            </li>
-            <li>
-                <img src="../assets/logo.png">
-            </li>
-            <li>
-                <img src="../assets/logo.png">
-            </li>
-            <li>
-                <img src="../assets/logo.png">
-            </li>
-            <li>
-                <img src="../assets/logo.png">
-            </li>
-            <li>
-                <img src="../assets/logo.png">
-            </li>
-            <li>
-                <img src="../assets/logo.png">
+                <ul>
+                    <li><img src="../assets/festa.jpg"></li>
+                    <br>
+                    <li>Carlos Amaral</li>
+                </ul>
+                
+
             </li>
             <li>
                 <img src="../assets/logo.png">
@@ -48,7 +36,7 @@ export default {
 }
 </script>
 
-<style>
+<style scoped>
 :root{
     --light: #fff;
     --dark: #242424;
@@ -62,9 +50,9 @@ export default {
     padding: 0;
 }
 
-section{
+section.friends{
     background: var(--dark);
-    height: 9vh;
+    height: auto;
     display: block;
     position: relative;
 }
@@ -77,18 +65,20 @@ ul li{
     display: inline-block;
     background: var(--light);
     border-radius: var(--radius);
-    padding: 1em;
+    padding: 0.4em;
     margin-left: 0.5em;
     overflow: visible;
 }
 
 ul li:first-child{
     margin-left: 3em;
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
 }
 
 ul li img{
-    width: 1.5em;
-    height: auto;
+    width: 50px;
+    height: 50px;
 }
 
 </style>

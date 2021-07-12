@@ -1,18 +1,22 @@
 <template>
   <section>
       <div class="name">
-          <h1>Carlos Amaral</h1>
+          <!--Usar o double mustache no username e puxar no banco-->
+          <h1>Username</h1>
       </div>
 
       <div class="description">
-          <h5>Hacking...</h5>
+          <h5>Description</h5>
       </div>
   </section>
 </template>
 
 <script>
 export default {
-    name: 'User'
+    name: 'User',
+    props: {
+        username: String
+    }
 }
 </script>
 
@@ -20,6 +24,7 @@ export default {
 :root{
     --light: #fff;
     --dark: #242424;
+    --semi-light: #949494;
     --semi-dark: #454545;
     --primary: #f93;
 
@@ -32,20 +37,16 @@ export default {
 }
 
 section{
-    background: var(--light);
-    padding-left: 3em;
-    padding-top: 1em;
+    padding-left: 1em;
 }
 
 section div.name{
-    font-family: 'Segoe UI';
     font-size: 1rem;
     color: var(--dark)
 }
 
-section div.description{
-    font-family: 'Segoe UI ';
-    color: var(--semi-dark);
+h5{
+    color: #949494;
 
 }
 </style>
