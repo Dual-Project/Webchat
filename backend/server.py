@@ -5,7 +5,7 @@ from flask_sqlalchemy import SQLAlchemy
 # App Configs
 app = Flask(__name__, template_folder='../frontend/dist', static_folder='../frontend/dist/js')
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mysql://root:root@localhost/webchat'
-app.config['SECRET_KEY'] = 'secret!'
+app.config['SECRET_KEY'] = "5519f356df7646eab832bba94bed84b9"
 io = SocketIO(app)
 db = SQLAlchemy(app)
 
