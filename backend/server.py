@@ -16,6 +16,7 @@ def view():
     return render_template('index.html')
 
 
+# SocketIO
 @io.on('message')
 def handle_message(message):
     print('message: ' + message)
